@@ -58,3 +58,57 @@ a, a:hover{
 
   color:#7B2BF2
 }
+
+/*+++++++++++++ bhavik */
+
+footer {
+  padding:50px 0px !important;
+  background-color: #101010;
+  padding: 10px;
+  color:#c5c7c1;
+}
+footer .container >h1{
+
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+footer .title-footer{
+text-align: center;  
+font-size: small;
+
+}
+
+footer .social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px ;
+}
+footer .social-media .col-3{
+  padding: 0px 20px;
+}
+footer .social-media .col-3 i{
+  padding: 10px;
+
+}
+
+footer .social-media .col-3:not(:last-child)::after {
+  content: "";
+  margin-left: 20px;
+  background-color: #c5c7c1;
+  padding: 1px;
+}
+
+footer .row{
+  margin: auto;
+  width: 90%;
+  height: 1px;
+  background-color: #c5c7c1;
+  margin-bottom: 10px;
+}
+
+footer .brand-copyright{
+  text-align: center;
+}

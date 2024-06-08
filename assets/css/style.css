@@ -112,3 +112,121 @@ footer .row{
 footer .brand-copyright{
   text-align: center;
 }
+
+
+/* bhavik */ 
+.nav-wrapper{
+
+  /* width: 100% !important; */
+  /* min-height: 100vh !important; */
+
+  /* display: none; */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: #101010;
+  color: #c5c7c1;
+  transform: translateY(-100vh);
+  transition: 0.5s;
+}
+.bars{
+  cursor: pointer;
+}
+.nav-wrapper.active{
+  transform: translateY(0);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: #101010;
+  color: #c5c7c1;
+  transition: 0.5s;
+}
+.nav-wrapper .wrapper-content{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+.wrapper-content .bars-close{
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  padding: 10px;
+  font-size: 30px;
+  transition: transform 1s; 
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+.nav-wrapper.active .bars-close {
+  animation: rotate360 1s; 
+}
+
+.contact-wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form{
+  
+  width: 100%;
+  padding-top: 30vh;
+}
+
+/* .contact-wrapper form { */
+  /* display: flex; */
+  /* flex-direction: column; */
+/* } */
+
+
+
+.contact-wrapper .form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.form-group button[type="submit"] {
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid #c5c7c1;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}

@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "rocgrotesk";
+  src: url(../fonts/Fontspring-DEMO-rocgrotesk-regular.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "rocgrotesk";
+}
+
+li{
+  list-style: none;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: unset;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.btn{
+  min-width: 150px;
+  border-radius: 100px;
+  padding: 20px 50px;
+  border: 2px solid black;
+}
+
+.navbar .bars i{
+  font-size: 25px;
+}
+
+#cover .tagline{
+  font-size: 1.5vw;
+}
+
+#cover .headline{
+  font-size: 3.5vw;
+}
+
+#cover .headline > span{
+  font-size: 6vw;
+  display: block;
+}
+
+#cover .headline > span > span{
+
+  color:#7B2BF2
+}

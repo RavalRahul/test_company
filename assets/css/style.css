@@ -3,58 +3,161 @@
   src: url(../fonts/Fontspring-DEMO-rocgrotesk-regular.otf);
 }
 
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "rocgrotesk";
 }
 
-li{
+li {
   list-style: none;
 }
 
-a, a:hover{
+a,
+a:hover {
   text-decoration: none;
   color: unset;
 }
 
-.container{
+.container {
   width: 90%;
   margin: auto;
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+  align-items: center;
 }
 
-.btn{
-  min-width: 150px;
+.btn {
   border-radius: 100px;
-  padding: 20px 50px;
+  padding: 18px 50px;
   border: 2px solid black;
 }
 
-.navbar .bars i{
+.navbar .brand-name{
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.navbar .bars i {
   font-size: 25px;
 }
 
-#cover .tagline{
+#cover{
+  display: flex;
+  justify-content: space-between;
+}
+
+#cover .col-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 100px 0;
+}
+
+#cover .tagline {
   font-size: 1.5vw;
+  padding: 20px 0;
 }
 
-#cover .headline{
-  font-size: 3.5vw;
+#cover .headline {
+  font-size: 3.8vw;
 }
 
-#cover .headline > span{
-  font-size: 6vw;
+#cover .headline > span {
+  font-size: 8vw;
   display: block;
+  margin-top: -40px;
 }
 
-#cover .headline > span > span{
+#cover .headline > span > span {
+  color: #7b2bf2;
+}
 
-  color:#7B2BF2
+#cover .cover-btns {
+  display: flex;
+  gap: 15px;
+}
+
+#cover .cover-btns li a {
+  transition: 0.3s;
+}
+
+#cover .cover-btns li:first-child a,
+#cover .cover-btns li:last-child a:hover {
+  background-color: black;
+  color: white;
+}
+
+
+#cover .col-2 .social{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 100px 0;
+  height: 100%;
+}
+  
+#cover .col-2 .social a{
+  transform: rotate(90deg);
+}
+
+
+/*+++++++++++++ footer */
+
+footer {
+  padding:50px 0px !important;
+  background-color: #101010;
+  padding: 10px;
+  color:#c5c7c1;
+}
+footer .container >h1{
+
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+footer .title-footer{
+text-align: center;  
+font-size: small;
+
+}
+
+footer .social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px ;
+}
+footer .social-media .col-3{
+  padding: 0px 20px;
+}
+footer .social-media .col-3 i{
+  padding: 10px;
+
+}
+
+footer .social-media .col-3:not(:last-child)::after {
+  content: "";
+  margin-left: 20px;
+  background-color: #c5c7c1;
+  padding: 1px;
+}
+
+footer .row{
+  margin: auto;
+  width: 90%;
+  height: 1px;
+  background-color: #c5c7c1;
+  margin-bottom: 10px;
+}
+
+footer .brand-copyright{
+  text-align: center;
 }

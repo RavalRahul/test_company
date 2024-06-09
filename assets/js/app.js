@@ -15,3 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
   });
 
+
+
+  document.addEventListener('mousemove', (e) => {
+    const cursor = document.querySelector('.cursor');
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY + window.scrollY}px`; // Adjust for scrolling
+  });
+
+document.addEventListener('click', (e) => {
+    const cursor = document.querySelector('.cursor');
+    const cursorInner = document.querySelector('.cursor-inner');
+    cursor.classList.add('bubble');
+    cursorInner.classList.add('bubble-inner');
+    setTimeout(() => {
+        cursor.classList.remove('bubble');
+        cursorInner.classList.remove('bubble-inner');
+    }, 500); // Reset the cursor and inner circle after the animation completes
+});

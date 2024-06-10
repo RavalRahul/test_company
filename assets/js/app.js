@@ -3,8 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const navWrapper = document.querySelector('.nav-wrapper');
     const closebars=document.querySelector(".bars-close");
 
-
-
     bars.addEventListener('click', function() {
       navWrapper.classList.toggle('active');
     });
@@ -48,15 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         cursor.classList.remove('bubble');
         cursorInner.classList.remove('bubble-inner');
-        cursorInner.style.transform = 'translate(0, 0)'; // Reset inner circle position
+        cursorInner.style.transform = 'translate(0, 0)'; 
 
-    }, 500); // Reset the cursor and inner circle after the animation completes
+    }, 500); 
 }
 
-// Add event listener for click event
 document.addEventListener('click', (e) => {
     triggerBubbleEffect();
 });
 
-// Trigger the bubble effect every 5 seconds
 setInterval(triggerBubbleEffect, 3000);

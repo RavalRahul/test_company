@@ -152,7 +152,49 @@ a:hover {
 }  
 
 
+.section-head p{
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1vw;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
+.section-head h2{
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+}
+
+
+
+/* count section */
+
+
+.count-section .count-body{
+  display: flex;
+}
+
+.count-section .count-body .count-1{
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-section .count-body .count-1 p{
+  font-size: 10rem;
+  font-weight: bold;
+  color: #f1f3ea;
+  text-align: center;
+}
+  
+.count-section .count-body .count-1 span{
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 
 
 /*+++++++++++++ footer */
@@ -430,13 +472,14 @@ body{
 }
 
 
-left-container,.right-container{
+.left-container,.right-container{
   width: 50%;
-  padding: 10px;
+  padding: 50px;
 }
 
 img{
   width: 100%;
+  display: block;
 }
 #sec-2{
   display: flex;
@@ -449,12 +492,19 @@ img{
   /* grid-template-columns: 1fr 1fr; */
 }
 #poster1{
-    height: 70vh;
-    object-fit: contain;
+  object-fit: contain;
 }
 .boxes{
-
   display: flex;
+  gap: 50px;
+}
 
+.boxes p{
+  color: #797c7f;
+  padding-top: 20px;
+}
 
+.boxes i{
+  color: #7b2bf2;
+  font-size: 4.5rem;
 }

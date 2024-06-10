@@ -15,15 +15,32 @@ document.addEventListener('DOMContentLoaded', function() {
     
   });
 
-
-
+  let lastX = 0;
+  let lastY = 0;
+  let moving = false;
+  
   document.addEventListener('mousemove', (e) => {
     const cursor = document.querySelector('.cursor');
+    const cursorInner = document.querySelector('.cursor-inner');
+    
+    // Update cursor position
     cursor.style.left = `${e.clientX}px`;
     cursor.style.top = `${e.clientY + window.scrollY}px`; // Adjust for scrolling
+
+    if (moving) {
+        const diffX = e.clientX - lastX;
+        const diffY = e.clientY - lastY;
+
+        // Set the inner cursor position relative to the outer cursor
+        cursorInner.style.transform = `translate(${diffX}px, ${diffY}px)`;
+    }
+
+    lastX = e.clientX;
+    lastY = e.clientY;
+    moving = true;
   });
 
-document.addEventListener('click', (e) => {
+  function triggerBubbleEffect() {
     const cursor = document.querySelector('.cursor');
     const cursorInner = document.querySelector('.cursor-inner');
     cursor.classList.add('bubble');
@@ -31,5 +48,15 @@ document.addEventListener('click', (e) => {
     setTimeout(() => {
         cursor.classList.remove('bubble');
         cursorInner.classList.remove('bubble-inner');
+        cursorInner.style.transform = 'translate(0, 0)'; // Reset inner circle position
+
     }, 500); // Reset the cursor and inner circle after the animation completes
+}
+
+// Add event listener for click event
+document.addEventListener('click', (e) => {
+    triggerBubbleEffect();
 });
+
+// Trigger the bubble effect every 5 seconds
+setInterval(triggerBubbleEffect, 3000);

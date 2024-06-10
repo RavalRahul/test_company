@@ -428,3 +428,33 @@ body{
   overflow-x: hidden;
   cursor: auto; 
 }
+
+
+left-container,.right-container{
+  width: 50%;
+  padding: 10px;
+}
+
+img{
+  width: 100%;
+}
+#sec-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-container
+{
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+}
+#poster1{
+    height: 70vh;
+    object-fit: contain;
+}
+.boxes{
+
+  display: flex;
+
+
+}

@@ -376,3 +376,85 @@ textarea {
   cursor: pointer;
   font-size: 16px;
 }
+
+/* cursor */
+
+.cursor {
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black; /* Border */
+  transition: transform 0.1s ease, width 0.5s ease-out, height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.cursor-inner {
+  width: 10px; 
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+}
+
+.bubble {
+  animation: bubble 0.5s ease-out;
+}
+
+.bubble-inner {
+  width: 20px; /* Expanded size of the inner circle */
+  height: 20px;
+}
+
+@keyframes bubble {
+  0% {
+      width: 40px;
+      height: 40px;
+      opacity: 1;
+  }
+  100% {
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+  }
+}
+
+
+body{
+  overflow-x: hidden;
+  cursor: auto; 
+}
+
+
+left-container,.right-container{
+  width: 50%;
+  padding: 10px;
+}
+
+img{
+  width: 100%;
+}
+#sec-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-container
+{
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+}
+#poster1{
+    height: 70vh;
+    object-fit: contain;
+}
+.boxes{
+
+  display: flex;
+
+
+}

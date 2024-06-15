@@ -1,0 +1,138 @@
+
+
+/* Small devices (mobile) */
+@media (max-width: 600px) {
+
+    body{
+        /* background-color: red !important; */
+    }
+    #cover .cover-btns{
+        flex-direction: column;
+    }
+    #cover .cover-btns li{
+        margin-bottom: 20px;
+    }
+    #cover .headline > span > span {
+        font-size: 10vw;
+        display: block;
+        margin-top: 35px;
+    }
+    .section-head h2{
+        text-align:center;
+        font-size: 3vw;
+    }
+    .section-head p{
+
+        text-align: center;
+    }
+
+    #cover .tagline {
+        font-size: 3vw;
+        padding: 20px 0;
+    }
+    #cover .headline{
+        font-size: 6vw;
+    }
+    .btn
+    {
+        border-radius: 100px;
+        padding: 14px 40px;
+        border: 2px solid black;
+    }
+    #sec-2{
+        flex-direction: column;
+    }
+    #sec-2 .left-container,.right-container
+    {
+        width: 100%;
+    }
+    .count-section .count-body .count-1 p{
+        font-size: 3rem;
+    }
+    .count-section .count-body .count-1 span{
+        font-size: 2rem;
+    }
+    .boxes{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .boxes .box-1{
+        /* border-bottom: 1px solid black; */
+    }
+    
+    footer .social-media{
+        flex-direction: column;
+    }
+
+    footer .social-media .col-3:not(:last-child)::after {
+        content: "";
+        margin-left: 0px;
+        background-color:transparent;
+    }
+
+    footer .social-media .col-3 {
+        text-align: center;
+        
+    }
+    .box-1 {
+        text-align: center;
+    }
+    
+}
+/* Medium devices (tablet) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+    #cover .headline > span > span {
+        font-size: 10vw;
+        display: block;
+        margin-top: 35px;
+    }
+
+    #cover .tagline {
+        font-size: 2.5vw;
+        padding: 20px 0;
+    }
+    .btn
+    {
+        border-radius: 100px;
+        padding: 18px 50px;
+        border: 2px solid black;
+    }
+    #sec-2{
+        flex-direction: column;
+    }
+    #sec-2 .left-container,.right-container
+    {
+        width: 100%;
+    }
+    .count-section .count-body .count-1 p{
+        font-size: 5rem;
+    }
+    .count-section .count-body .count-1 span{
+        font-size: 1.4rem;
+    }
+    
+    .section-head p{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 1vw;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .section-head h2{
+        text-align: center;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 3.5rem;
+        margin-bottom: 10px;
+    }
+  
+}
+/* Large devices (desktop) */
+@media (min-width: 1025px) {
+    body{
+    /* background-color: yellow !important; */
+    }
+}

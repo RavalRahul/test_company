@@ -10,10 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/resonsive.css">
+  <link rel="stylesheet" href="assets/css/home-testimonial.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
 </head>
 
 <body>
@@ -71,7 +79,10 @@
       <div class="col-1">
         <p class="tagline">We appreciate your trust greatly!</p>
         <h1 class="headline">
-          Unlock Your Business Potential with<span>Titans <span>Lab</span></span>
+          Unlock Your Business Potential with
+          <span class="title">
+          <span>Titans <span>Lab</span></span>
+        </span>
         </h1>
         <ul class="cover-btns">
           <li><a class="btn" href="">About Us</a></li>
@@ -171,7 +182,7 @@
   <br />
   <br />
 
-  <section class="count-section">
+  <section id="sec-3" class="count-section">
     <div class="container">
       <div class="count-body">
         <div class="count-1">
@@ -190,8 +201,253 @@
     </div>
   </section>
 
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 
-  <!-- ------bhavik------- -->
+  <section id="sec-4">
+    <div class="col">
+      <img src="assets/img/mockup.jpg" alt="mockup">
+    </div>
+    <div class="col">
+      <div class="section-head">
+        <p>HOW WE WORK</p>
+        <h2>Our Design Process in Four Steps</h2>
+      </div>
+      <div class="section-accordion">
+        <div class="accordion__wrapper">
+            <!-- Accordion 1  -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">What is the purpose of this pen?</h2>
+                    <span class="accordion__icon">
+                        <i id="accordion-icon" class="bi bi-plus"></i>
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">This pen is designed to provide web developers with boilerplate code for a FAQ Accordion.</p>
+                </div>
+            </div>
+    
+            <!-- Accordion 2  -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">What is an accordion?</h2>
+                    <span class="accordion__icon">
+                      <i id="accordion-icon" class="bi bi-plus"></i>
+
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">An accordion is a vertically stacked list of headers that users can click on to reveal more information about a business. With an accordion, when someone visits your web page, they will see a list of headers.</p>
+                </div>
+            </div>
+    
+            <!-- Accordion 3 -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">How can I customize the accordion?</h2>
+                    <span class="accordion__icon">
+                      <i id="accordion-icon" class="bi bi-plus"></i>
+
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">You can customize the accordion by modifying the CSS styles and changing the HTML structure as per your needs. You can also add JavaScript to enhance its functionality.</p>
+                </div>
+            </div>
+
+            <!-- Accordion 4 -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">Is this accordion responsive?</h2>
+                    <span class="accordion__icon">
+                      <i id="accordion-icon" class="bi bi-plus"></i>
+
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">Yes, this accordion is designed to be responsive and will adjust its layout based on the screen size to ensure a good user experience on both desktop and mobile devices.</p>
+                </div>
+            </div>
+    
+            <!-- Accordion 5 -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">Can I use this accordion in my project?</h2>
+                    <span class="accordion__icon">
+                      <i id="accordion-icon" class="bi bi-plus"></i>
+
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">Absolutely! Feel free to use this accordion in your projects. You can modify and adapt it as needed to fit your requirements.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+
+  <section id="sec-5">
+    <div class="container">
+<section class="testimonial-section">
+	<div class="large-container">
+    <div class="section-head">
+      <p>TESTIMONIALS</p>
+      <h2>What Customers Say</h2>
+    </div>
+
+		<div class="testimonial-carousel owl-carousel owl-theme">
+			<!-- Testimonial Block -->
+			<div class="testimonial-block">
+				<div class="inner-box">
+					<div class="text">Why is this important? Because clients want to know the businesses they depend on for advice, are well managed in their own right. Not only that but this event gives you the chance to give your back-office team</div>
+					<div class="info-box">
+						<div class="thumb"><img src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg" alt=""></div>
+						<h4 class="name">Raval Rahul</h4>
+						<span class="designation">Founder - Developer</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Testimonial Block -->
+			<div class="testimonial-block">
+				<div class="inner-box">
+					<div class="text">Why is this important? Because clients want to know the businesses they depend on for advice, are well managed in their own right. Not only that but this event gives you the chance to give your back-office team</div>
+					<div class="info-box">
+						<div class="thumb"><img src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg" alt=""></div>
+						<h4 class="name">Bhavik Prajapati</h4>
+						<span class="designation">Founder - Developer</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Testimonial Block -->
+			<div class="testimonial-block">
+				<div class="inner-box">
+					<div class="text">Why is this important? Because clients want to know the businesses they depend on for advice, are well managed in their own right. Not only that but this event gives you the chance to give your back-office team</div>
+					<div class="info-box">
+						<div class="thumb"><img src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg" alt=""></div>
+						<h4 class="name">Nisarg Bhojani</h4>
+						<span class="designation">Founder - Business Analyst</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="thumb-layer paroller">
+			<figure class="image"><img src="http://t.commonsupport.com/adro/images/resource/user-thumbs.png" alt=""></figure>
+		</div>
+	</div>
+</section>
+
+</div>
+</section>
+<!--End Testimonial Section -->
+  
+
+
+<section class="container">
+  <div id="sec-5">
+
+    <div class="col">
+      <div class="section-head">
+        <h2>Infuse Your Brand with Excellence</h2>
+      </div>
+      <div class="section-accordion">
+        <div class="accordion__wrapper">
+            <!-- Accordion 1  -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">What is the purpose of this pen?</h2>
+                    <span class="accordion__icon">
+                        <i id="accordion-icon" class="bi bi-plus"></i>
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">This pen is designed to provide web developers with boilerplate code for a FAQ Accordion.</p>
+                </div>
+            </div>
+    
+            <!-- Accordion 2  -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">What is an accordion?</h2>
+                    <span class="accordion__icon">
+                      <i id="accordion-icon" class="bi bi-plus"></i>
+
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">An accordion is a vertically stacked list of headers that users can click on to reveal more information about a business. With an accordion, when someone visits your web page, they will see a list of headers.</p>
+                </div>
+            </div>
+    
+            <!-- Accordion 3 -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">How can I customize the accordion?</h2>
+                    <span class="accordion__icon">
+                      <i id="accordion-icon" class="bi bi-plus"></i>
+
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">You can customize the accordion by modifying the CSS styles and changing the HTML structure as per your needs. You can also add JavaScript to enhance its functionality.</p>
+                </div>
+            </div>
+
+            <!-- Accordion 4 -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">Is this accordion responsive?</h2>
+                    <span class="accordion__icon">
+                      <i id="accordion-icon" class="bi bi-plus"></i>
+
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">Yes, this accordion is designed to be responsive and will adjust its layout based on the screen size to ensure a good user experience on both desktop and mobile devices.</p>
+                </div>
+            </div>
+    
+            <!-- Accordion 5 -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">Can I use this accordion in my project?</h2>
+                    <span class="accordion__icon">
+                      <i id="accordion-icon" class="bi bi-plus"></i>
+
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">Absolutely! Feel free to use this accordion in your projects. You can modify and adapt it as needed to fit your requirements.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <img src="assets/img/mockup2.jpg" alt="mockup">
+    </div>
+  </div>
+</section>
+
+
+<section id="sec-6">
+  <p>WE CREATE UNIQUE DESIGN</p>
+  <h2>Anything in your mind ?</h2>
+  <div class="btn-group">
+    <a class="btn">Contact Us Now</a>
+  </div>
+</section>
+
 
   <footer>
     <div class="container">
@@ -224,35 +480,10 @@
     </div>
   </footer>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
-  <script src="assets/js/app.js"></script>
+  
 </body>
 
+
+<script src="assets/js/app.js"></script>
 </html>

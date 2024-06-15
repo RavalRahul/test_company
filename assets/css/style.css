@@ -4,6 +4,7 @@
 }
 
 
+
 * {
   margin: 0;
   padding: 0;
@@ -529,6 +530,7 @@ img{
   /* grid-template-columns: 1fr 1fr; */
 }
 #poster1{
+  margin-top: 25px;
   object-fit: contain;
 }
 .boxes{

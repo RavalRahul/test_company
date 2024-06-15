@@ -5,16 +5,21 @@
 ====================================================================
 
 ***/
+
+#sec-testi{
+  margin-top: 100px;
+}
+
 .large-container {
   position: static;
   max-width: 1580px;
-  padding: 0px 30px;
+  padding: 0px 0 0 30px;
   margin: 0 auto;
 }
 
 .testimonial-section {
   position: relative;
-  padding-top: 80px;
+  /* padding-top: 80px; */
   padding-bottom: 210px;
   overflow: hidden;
 }
@@ -65,7 +70,7 @@
 }
 .testimonial-block .info-box {
   position: relative;
-  padding-left: 115px;
+  /* padding-left: 115px; */
   padding-top: 10px;
 }
 .testimonial-block .info-box .thumb {
@@ -161,6 +166,10 @@
     margin-bottom: 50px;
   }
 
+  .testimonial-section {
+    padding-bottom: 0;
+}
+
   .testimonial-block {
     padding: 0;
   }
@@ -180,6 +189,40 @@
 .testimonial-carousel .owl-prev {
     border: 2px solid #f1f1f1;
   }
+
+  .testimonial-section .testimonial-carousel {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 0;
+  }
+
+  .testimonial-section:before {
+    position: initial;
+    left: initial;
+    top: initial;
+    background-image: initial;
+    background-repeat: initial;
+    background-position: initial;
+    width: initial;
+    height: initial;
+    content: initial;
+    -webkit-animation: initial;
+    animation: initial;
+  }
+
+  .testimonial-section .thumb-layer .image img {
+    display: none;
+  }
+
+  .testimonial-block .inner-box {
+    margin: 0 5px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow: initial;
+    border: initial;
+  }
+
 }
 @media only screen and (max-width: 1366px) {
   .large-container {

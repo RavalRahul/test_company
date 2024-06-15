@@ -6,20 +6,43 @@
     body{
         /* background-color: red !important; */
     }
+    
+    .btn {
+        padding: 12px 50px !important;
+        min-width: initial;
+    }
+
+    #cover{
+        height: 85vh;
+    }
+
+    #cover .col-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        gap: 15px;
+        padding-top: 20px;
+    }
+
     #cover .cover-btns{
         flex-direction: column;
+        margin-top: 25px;
     }
     #cover .cover-btns li{
-        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    #cover .cover-btns li a{
+        display: block;
+        text-align: center;
     }
     #cover .headline > span > span {
-        font-size: 10vw;
-        display: block;
-        margin-top: 35px;
+        font-size: 15vw !important;
     }
     .section-head h2{
         text-align:center;
-        font-size: 3vw;
+        font-size: 7vw !important;
+        line-height: 8vw !important;
     }
     .section-head p{
 
@@ -27,25 +50,33 @@
     }
 
     #cover .tagline {
-        font-size: 3vw;
-        padding: 20px 0;
+        font-size: 4vw !important;
+        padding-bottom: 0 !important;
     }
     #cover .headline{
         font-size: 6vw;
     }
-    .btn
+    /* .btn
     {
         border-radius: 100px;
         padding: 14px 40px;
         border: 2px solid black;
     }
+     */
+
     #sec-2{
         flex-direction: column;
     }
     #sec-2 .left-container,.right-container
     {
-        width: 100%;
+        width: 100% !important;
+        padding: 0 !important;
     }
+    
+    .count-section .count-body {
+        flex-direction: column; 
+    }
+
     .count-section .count-body .count-1 p{
         font-size: 3rem;
     }
@@ -56,6 +87,25 @@
         flex-direction: column;
         gap: 50px;
     }
+
+    #sec-4 .col{
+        padding: 25px !important;
+    }
+
+    #sec-5 .col{
+        padding: 0 !important;
+    }
+
+    #sec-6 {
+        h2 {
+            font-size: 2rem !important;
+        }
+    }
+
+    #sec-testi {
+        margin-top: 50px !important;
+    }
+
     .boxes .box-1{
         /* border-bottom: 1px solid black; */
     }
@@ -80,7 +130,7 @@
     
 }
 /* Medium devices (tablet) */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (max-width: 768px){
     
     #cover .headline > span > span {
         font-size: 10vw;
@@ -129,6 +179,39 @@
         margin-bottom: 10px;
     }
   
+    #sec-4 {
+        
+        .col{
+            width: 100%;
+        }
+
+        .col:first-child{
+            display: none;
+        }
+
+    }
+
+    #sec-5 {
+        .col{
+            width: 100%;
+            padding: 100px 50px 0 50px;
+        }
+        .col:last-child{
+            display: none;   
+        }
+    }
+    
+    #sec-6{
+        gap: 30px;
+
+        h2{
+            font-size: 3rem;
+        }
+
+        .btn-group{
+            margin-top: 10px;
+        }
+
 }
 /* Large devices (desktop) */
 @media (min-width: 1025px) {

@@ -546,10 +546,10 @@ img{
   padding: 10px;
 }
 
-.box-1 i{
-  padding: 15px 15px 15px 0px ;
+.boxes i{
+  padding: 10px;
   color: #7b2bf2;
-  font-size: var(--fs-md)
+  font-size: var(--f)
 }
 
 

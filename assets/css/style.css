@@ -542,10 +542,14 @@ img{
   color: #797c7f;
   padding-top: 20px;
 }
+.boxes .box-1{
+  padding: 10px;
+}
 
-.boxes i{
+.box-1 i{
+  padding: 15px 15px 15px 0px ;
   color: #7b2bf2;
-  font-size: 4.5rem;
+  font-size: var(--fs-md)
 }
 
 

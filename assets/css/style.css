@@ -672,3 +672,8 @@ img{
   }
 
 }
+
+
+#form input,textarea{ 
+  color: var(--color-white);
+}
